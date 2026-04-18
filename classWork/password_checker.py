@@ -12,13 +12,13 @@ IF password_length > 16
     PRINT Very Strong
 """
 
-password = input("Enter Amount password ")
+password = input("Enter password ")
 password_length = len(password)
 if password_length < 8:
     print("Very Weak")
 if password_length == 8:
     print("Weak")
-if password_length > 8 or password_length < 16:
+if password_length > 8 and password_length < 16:
     print("strong")
 if password_length > 16:
     print("Very Strong")
