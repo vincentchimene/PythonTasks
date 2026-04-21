@@ -1,15 +1,3 @@
-main_menu()
-main_menu_choice = int (input("Enter number")) 
-match main_menu_choice:
-    case 1:
-        phone_book()
-    case 2:
-        messages()
-    case 3:
-        chat()
-        
-    
-    
 def main_menu():
     print(f"""  MAIN MENU 
                 1. Phone book
@@ -159,7 +147,22 @@ def security_settings():
                 5. Phone security
                 6. Change 
                 """)
-
+def call_divert():
+    print(f"""  Call divert
+                0. Back
+                """)
+def games():
+    print(f"""  Games
+                0. Back
+                """)
+def calculator():
+    print(f"""  Calculator
+                0. Back
+                """)
+def reminders():
+    print(f"""  Reminders
+                0. Back
+                """)
 def clock():
     print(f"""  Clock
                 1. Alarm clock
@@ -169,6 +172,47 @@ def clock():
                 5. Countdown timer
                 6. Auto update
                 """)
+def profiles():
+    print(f"""  Profiles
+                0. Back
+                """)
+def sim_services():
+    print(f"""  Sim services
+                0. Back
+                """)
 
 
-
+main_menu()
+main_menu_choice = int (input("Enter number")) 
+match main_menu_choice:
+    case 1:
+        phone_book()
+    case 2:
+        messages()
+    case 3:
+        chat()
+    case 4:
+        call_register()
+    case 5:
+        tones()
+    case 6:
+        settings()
+    case 7:
+        call_diverts()
+    case 8:
+        games()
+    case 9:
+        calculator()
+    case 10:
+        reminders()
+    case 11:
+        clock()
+    case 12:
+        profiles()
+    case 13:
+        sim_service()
+    case _:
+        print("Invalid Entry!")       
+        
+    
+    
